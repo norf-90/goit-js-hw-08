@@ -7,7 +7,7 @@ import { galleryItems } from './gallery-items';
 const galleryEl = document.querySelector('.gallery');
 generateMarkup(galleryItems, galleryEl);
 
-var lightbox = new SimpleLightbox('.gallery a', {
+const lightbox = new SimpleLightbox('div a', {
   captionsData: 'alt',
   captionDelay: 250,
 });
