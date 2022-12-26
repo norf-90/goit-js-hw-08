@@ -13,5 +13,4 @@ player.on('timeupdate', throttle(onPlay, 1000));
 
 function onPlay(currentTime) {
   localStorage[KEY_NAME] = currentTime.seconds;
-  console.log(currentTime.seconds);
 }

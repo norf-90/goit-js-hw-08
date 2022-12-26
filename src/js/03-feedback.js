@@ -4,7 +4,6 @@ const KEY_NAME = 'feedback-form-state';
 const formEl = document.querySelector('.feedback-form');
 const inputEmailEl = document.querySelector('[name=email]');
 const inputMessageEl = document.querySelector('[name=message]');
-console.log(inputEmail);
 const buttonEl = document.querySelector('[type=submit]');
 const formData = {};
 
@@ -22,7 +21,7 @@ function onFormInput(event) {
 function onButtonClick(event) {
   event.preventDefault();
   console.log(load(KEY_NAME));
-  localStorage.clear();
+  localStorage.removeItem(KEY_NAME);
   inputEmailEl.value = '';
   inputMessageEl.value = '';
 }
