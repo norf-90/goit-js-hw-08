@@ -18,7 +18,6 @@ function onFormInput(event) {
 function initForm() {
   Object.keys(formData).forEach(key => {
     formEl.elements[key].value = formData[key];
-    console.log(key);
   });
 }
 
